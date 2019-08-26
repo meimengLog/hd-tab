@@ -1,34 +1,15 @@
-# my-project
+# hd-tab
 
-## Project setup
-```
-yarn install
-```
+npm install  hd-tab
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+mani.js
 
-### Run your tests
-```
-yarn run test
-```
+import MyTab from '../packages/index'
+Vue.use(MyTab)
 
-### Lints and fixes files
-```
-yarn run lint
-```
+<tab :data="data" @tabPro="tabPro"></tab>
 
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 方法
+data：对象
+tabPro：获取默认的值

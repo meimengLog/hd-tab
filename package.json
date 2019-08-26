@@ -1,15 +1,20 @@
 {
-  "name": "my-project",
-  "version": "0.1.0",
-  "private": true,
+  "name": "hd-tab",
+  "version": "1.0.0",
+  "author": "mengmei@sfmail.sf-express.com",
+  "license": "MIT",
+  "description": "tabs组件",
+  "main": "lib/hd-tab.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "lib": "vue-cli-service build --target lib --name hd-tab --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "element-ui": "^2.11.1",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
@@ -24,10 +29,17 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
+    "babel-plugin-component": "^1.1.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.9.2",
     "sass-loader": "^7.1.0",
+    "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.10"
+  },
+  "directories": {
+    "example": "examples",
+    "lib": "lib",
+    "test": "tests"
   }
 }
