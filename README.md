@@ -14,6 +14,7 @@ Vue.use(MyTab)
 
 ## 参数方法：
 ### 1、data：数据对象 
+```javascript
 {
   currentMenu：{//当前获取的tab
       menuUrl:'/index/shop', //页面路劲
@@ -34,6 +35,7 @@ Vue.use(MyTab)
    ]
 
 }
+```
 ### 2、tabPro：tab方法
 获取当前tab的选中值和当前tab里面的所有list
 
